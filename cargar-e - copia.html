@@ -8,32 +8,6 @@
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/main.css">
   <title>Pedidos Ortopedicos Futuro</title>
-  <script>
-    function generarcuadro(){
-     if(confirm("Esta seguro?"));{
-      $.ajax({
-       type: "GET",
-       url: "cuadro.html",
-       data: "ok=1",
-
-
-       success: function(datos) {
-
-
-         $("#entradacuadro").html(datos);
-         $("#rmpdmost").html($("#rmpdnom1").val());
-         $("#archivom").html($("#archivonom1").val());
-         $("#entregamos").html($("#entregamos1").val());
-
-       }
-
-
-     });
-
-    }
-
-  }
-</script>
 </head>
 <body>
  <div class="container">
@@ -212,10 +186,6 @@
             </tr>
           </tbody>
         </table>
-        <div id="entradacuadro">
-
-
-        </div>
         <div class="row">
           <div class="col align-self-end text-right">
             <button type="submit" class="btn btn-primary btn-sm">Procesar</button>
